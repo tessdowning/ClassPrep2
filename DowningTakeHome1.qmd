@@ -1,0 +1,73 @@
+---
+title: "Take Home 1"
+author: Tess Downing 
+execute: 
+  warning: false
+format: 
+  html:
+    embed-resources: true
+    theme: lux
+    self-contained: true
+---
+
+_Statement of Integrity:_ “All work presented is my own, and I have followed all rules for collaboration. If I used any AI on this assignment, I have clearly stated both (1) what my search prompt was and (2) what I used from the AI answer.””
+
+_Collaboration Reminder:_ You may work with other students in the class on the quiz, but you must list who you worked with at the top of your quiz. Write the name of any student(s) that you collaborated with in the space below this (ignore this if you did not collaborate with any students).
+
+Denali Stevens
+
+```{r, echo=FALSE}
+library(praise)
+praise()
+```
+
+*A suggestion for completing this quiz is to make an attempt at it only looking at handwritten notes. The reason for this is that the questions are meant to mirror the style of the handwritten in-class quiz, and you will only have access to handwritten notes for that quiz.*
+
+## _Question 1_ (1 point). Consider the following graph:
+## For which level of the category variable is it easiest to see the overall trend in the count through time? Use terminology from our course reading to give a one sentence reason for your selection.
+
+It is the easiest to see the trend in Group 5 because they are all beginning at the same point (0), which gives it a stable baseline, unlike the other categories.
+
+## _Question 2_ (2 points).
+
+### a. (1 point). Suppose that we want to make a map of the United States, and colour each state by the percent change in Covid cases this week compared to last week. States with an increase would have a positive percent change while states with a decrease would have a negative percent change. Should we use a sequential, diverging, or qualitative colour scale to colour the states? Give a one phrase or one sentence explanation.
+
+We should use a diverging color scale to color the states because we are showing a change in the number of cases variable .
+
+### b. (1 point). Suppose that, in our map, we now want to colour the states by the number of covid cases per 100,000 people. Should we use a sequential, diverging, or unordered colour scale to colour the states? Give a one phrase or one sentence explanation.
+
+We should use a sequential color scale to color the states because we are showing which states are getting "hotter" and "cooler" in respect to case numbers.
+
+## _Question 3_ (2 points). Suppose that, after grading this entire first course assessment for each student, I tell the class that the average for the first assessment was 85 out of 100 points.
+
+### a. If you had the data on each student’s assessment grade, what graph would be most appropriate to visualize this data?
+
+I think a histogram would be the most appropriate to visualize this data because the x-axis would be each student's name and the y-axis could be the numerical score on the assessment. 
+
+### b. What would the graph you selected in (a) tell you that you are not able to obtain from knowing the average? There are many additional things that a visualization would convey, and you should list as many as you can.
+
+The graph would show me the distribution (shape) of the students grades, the number (n) of students who took the assessment, the lowest grade and highest grade (spread) and, the median (center) grade instead of the mean grade. If were to be the person making the plot, I would make sure the x-axis was in an order to show the exam grades from lowest to highest by student name. 
+
+## _Question 4_ (3 points). Examine the following pairs of graphs on data on baseball players in the 2018 season. For each pair, state which of the 7 Grammar of Graphics parameters is different between the two graphs. Give a one phrase or one sentence reason for each selection.
+
+### a. _Pair 1._
+
+The difference in in the <GEOM_FUNCTION>. It is geom_point vs. geom_boxplot
+
+### b. _Pair 2._ For the following pair, the AESTHETICS have not been adjusted at all.
+
+There was a change in the <COORDINATE_FUNCTION>, the second graph has a coord_flip() to swap the x and y axis. (This is my favorite one)
+
+### _Pair 3._ This pair shows the number of homeruns for each player (as points), along with boxplots of the number of homeruns at each of 4 positions.
+
+There is a change in <POSITION>. The second plot has a jitter() for the points
+
+## _Question 5_ (2 points). Consider the following pairs of graphs. For each pair, select the graph that you believe is the better of the two. Give a 1-2 sentence reason for your selection, using reasoning from the course readings or from class.
+
+### a. The first pair examines the total number of players in the baseball data set in each of 4 positions.
+
+I like plot 1 more. There is a better data-to-ink ratio and plot 2 creates the illusion that there is a large difference in players between positions. Graphs that don't start at 0 are a crime. 
+
+### b. The second pair visualizes the number of homeruns for players in the data set, broken up by the player’s position.
+
+I like plot 1 more. You can clearly see the number of home runs per position instead of them being layered on top of another like plot 2. 

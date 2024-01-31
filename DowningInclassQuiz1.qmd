@@ -9,6 +9,10 @@ format:
     theme: lux
     self-contained: true
 ---
+Statement of Integrity: “All work presented is my own, and I have followed all rules for collaboration. I have not used any AI for this assignment.”
+
+Tess K Downing
+
 
 ```{r}
 library(praise)
@@ -19,30 +23,34 @@ praise()
 library(tidyverse)
 library(ggrepel)
 library(here)
+diamonds
 ```
 
-# _Question 1_
+# _Question 1_ 4 points). Using the diamonds data set, create the following plot. For the first plot, you should change the default colour and fill of your histogram to values other than the default, but they do not need to match the colorus given below exactly.
+
 ```{r}
-
+ggplot(data = diamonds, aes(x = price)) +
+  geom_histogram(colour = "darkblue", fill = "cyan", bins = 10) +
+  facet_wrap(~ cut) +
+  theme_minimal() 
 ```
 
-# _Question 2_
+# _Question 2_ (4 points). Change 2 theme options of your plot in the previous question. At least one of these changes should involve the use of either element_rect() or element_line() in some way. The following gives the reference page we used in class: https://ggplot2.tidyverse.org/reference/theme.html
+
 ```{r}
-
+ggplot(data = diamonds, aes(x = price)) +
+  geom_histogram(colour = "darkblue", fill = "cyan", bins = 15) +
+  facet_wrap(~ cut) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(size = 9),
+        plot.background = element_rect(fill = "lightblue"))
+  
 ```
 
-# _Question 3_
-```{r}
+# _Question 3_ (2 points). Push your .qmd file to your GitHub repository. For this question, give the link to your GitHub repository here.
 
-```
+https://github.com/tessdowning/ClassPrep2/blob/main/DowningInclassQuiz1.qmd
 
-# _Question 4_
-```{r}
 
-```
 
-# _Question 5_
-```{r}
-
-```
 
