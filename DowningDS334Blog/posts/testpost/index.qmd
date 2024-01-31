@@ -1,0 +1,14 @@
+---
+itle: "Test Post"
+author: "Tess Downing"
+date: "2024-01-31"
+categories: [news, code, analysis]
+---
+
+```{r, warning=FALSE}
+library(tidyverse)
+library(palmerpenguins)
+ggplot(data = penguins, aes(x = bill_length_mm)) +
+  geom_bar()
+```
+
