@@ -1,5 +1,5 @@
 ---
-itle: "Test Post"
+title: "Test Post"
 author: "Tess Downing"
 date: "2024-01-31"
 categories: [news, code, analysis]
