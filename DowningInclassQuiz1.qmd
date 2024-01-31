@@ -1,0 +1,48 @@
+---
+title: "In Class Quiz 1"
+author: Tess Downing 
+execute: 
+  warning: false
+format: 
+  html:
+    embed-resources: true
+    theme: lux
+    self-contained: true
+---
+
+```{r}
+library(praise)
+praise()
+```
+
+```{r}
+library(tidyverse)
+library(ggrepel)
+library(here)
+```
+
+# _Question 1_
+```{r}
+
+```
+
+# _Question 2_
+```{r}
+
+```
+
+# _Question 3_
+```{r}
+
+```
+
+# _Question 4_
+```{r}
+
+```
+
+# _Question 5_
+```{r}
+
+```
+
